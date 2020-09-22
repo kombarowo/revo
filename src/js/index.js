@@ -2,6 +2,7 @@ import '../styles/style.scss';
 
 import Menu from "./modules/menu";
 import VideoModal from "./modules/videoModal";
+import initAnchors from "./modules/anchors";
 import dynamicRender from "./modules/dynamicRender";
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -17,4 +18,5 @@ window.addEventListener('DOMContentLoaded', function () {
   })
 
   const videoModal = new VideoModal('.modal--video', '.button--play', '.modal__close', 'player');
+  initAnchors();
 })
