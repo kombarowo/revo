@@ -16,6 +16,10 @@
     position: relative;
   }
 
+  &__menu {
+    flex: 0 0 25%;
+  }
+
   &__row {
     box-sizing: border-box;
     flex: 0 0 20%;
@@ -25,7 +29,7 @@
     }
 
     &--2 {
-      flex: 0 0 60%;
+      flex: 0 0 65%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -42,19 +46,64 @@
       position: absolute;
       top: 0;
       left: 0;
-      background: rgba(21, 29, 40, 0.2);
+      background: rgba(21, 29, 40, 0.3);
     }
   }
 
-  &__button--play {
-    position: relative;
-    z-index: 1;
+  &__button {
+    &--play {
+      position: relative;
+      z-index: 1;
+    }
   }
 
-  &__menu {
-    box-sizing: border-box;
-    flex: 0 0 20%;
-    padding: 5vw 25px 0 25px;
-    background: $primColor;
+  &__cart {
+    margin-bottom: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+
+    &__sublogo {
+      display: none;
+    }
+
+    &__body {
+      flex-wrap: wrap;
+    }
+
+    &__row {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: center;
+
+      &--1 {
+        padding: 2.5vw 0;
+      }
+
+      &--2 {
+        flex: 0 0 100%;
+        min-height: 70vw;
+      }
+    }
+
+    & .container {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .intro {
+    &__menu {
+      flex: 0 0 30%;
+    }
+
+    &__row {
+      &--2 {
+        min-height: 60vw;
+      }
+    }
   }
 }

@@ -4,15 +4,22 @@
 @import "fonts";
 @import "text";
 @import "button";
+@import "menu";
 @import "intro";
 @import "cart";
-@import "menu";
 
-body{
+body {
   font-family: 'Nunito', sans-serif;
 }
 
-.container{
+.content{
+  transition: transform 0.5s;
+}
+.content.active {
+  transform: translateX(-30%);
+}
+
+.container {
   box-sizing: border-box;
   max-width: 1170px;
   padding: 0 15px;
