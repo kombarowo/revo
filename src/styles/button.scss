@@ -1,0 +1,25 @@
+.button {
+  &:focus,
+  &:active {
+    outline: none;
+    border: none;
+  }
+
+  border: none;
+
+  &--play {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    background-image: url('../assets/img/png/play.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button {
+    cursor: pointer;
+  }
+}
