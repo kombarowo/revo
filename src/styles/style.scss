@@ -1,3 +1,11 @@
 @import '~normalize.css';
 @import "mixins";
 @import "fonts";
+@import "intro";
+
+.container{
+  box-sizing: border-box;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
