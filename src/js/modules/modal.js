@@ -1,9 +1,10 @@
+import calcScroll from "./calcScroll";
+
 export default class Modal {
   constructor(modal, trigger, close) {
     this.$el = document.querySelector(modal);
     this.$triggers = document.querySelectorAll(trigger);
     this.closeBtn = this.$el.querySelector(close);
-
     this.setup();
   }
 
@@ -26,11 +27,13 @@ export default class Modal {
 
   open() {
     this.$el.classList.add('active');
+    document.body.marginRight = calcScroll() + 'px';
     document.body.classList.add('scroll-lock');
   }
 
   close() {
     this.$el.classList.remove('active');
+    document.body.marginRight = '';
     document.body.classList.remove('scroll-lock');
   }
 

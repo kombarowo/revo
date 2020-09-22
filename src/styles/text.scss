@@ -10,8 +10,28 @@
     font-weight: 300;
   }
 
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--extra-bold {
+    font-weight: 900;
+  }
+
   &--color1 {
     color: #ffffff;
+  }
+
+  &--size1 {
+    font-size: 20px;
+  }
+
+  &--size2 {
+    font-size: 24px;
+  }
+
+  &--size3 {
+    font-size: 30px;
   }
 }
 

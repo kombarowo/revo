@@ -17,7 +17,8 @@
   }
 
   &__menu {
-    flex: 0 0 25%;
+    box-sizing: border-box;
+    flex: 0 0 20%;
   }
 
   &__row {
@@ -29,7 +30,7 @@
     }
 
     &--2 {
-      flex: 0 0 65%;
+      flex: 0 0 60%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -97,11 +98,12 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .intro {
     &__menu {
-      flex: 0 0 30%;
+      flex: 0 0 25%;
     }
 
     &__row {
       &--2 {
+        flex: 0 0 55%;
         min-height: 60vw;
       }
     }

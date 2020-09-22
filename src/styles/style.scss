@@ -8,9 +8,12 @@
 @import "intro";
 @import "cart";
 @import "modal";
+@import "labels";
+@import "build";
 
 body {
   font-family: 'Nunito', sans-serif;
+  color: $primColor;
 }
 
 .scroll-lock {
@@ -30,4 +33,9 @@ body {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.section__titles {
+  text-align: center;
+  padding: 5vw 0;
 }
