@@ -9,11 +9,10 @@ export default class VideoModal extends Modal {
   }
 
   open() {
-    console.log(this.$player)
     if (!this.player) {
       this.player = new YT.Player(this.playerId, {
-        height: '360',
-        width: '640',
+        height: '100%%',
+        width: '100%',
         videoId: this.$player.dataset.url,
       })
     }
@@ -22,7 +21,6 @@ export default class VideoModal extends Modal {
   }
 
   close() {
-    console.log(this.player);
     this.player.pauseVideo();
     this.$el.classList.remove('active');
     document.body.classList.remove('scroll-lock');
