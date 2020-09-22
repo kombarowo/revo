@@ -2,8 +2,15 @@
 @import "vars";
 @import "mixins";
 @import "fonts";
+@import "text";
 @import "button";
 @import "intro";
+@import "cart";
+@import "menu";
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
 
 .container{
   box-sizing: border-box;

@@ -1,0 +1,14 @@
+.text{
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2em;
+
+  &--light{
+    font-weight: 300;
+  }
+
+  &--color1{
+    color: #ffffff;
+  }
+}
