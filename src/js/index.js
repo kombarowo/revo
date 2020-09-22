@@ -1,6 +1,7 @@
 import '../styles/style.scss';
 
 import Menu from "./modules/menu";
+import VideoModal from "./modules/videoModal";
 import dynamicRender from "./modules/dynamicRender";
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -15,4 +16,5 @@ window.addEventListener('DOMContentLoaded', function () {
     dynamicRender('.menu', mainMenu.close.bind(mainMenu));
   })
 
+  const videoModal = new VideoModal('.modal--video', '.button--play', '.modal__close', 'player');
 })

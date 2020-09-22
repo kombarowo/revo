@@ -7,14 +7,20 @@
 @import "menu";
 @import "intro";
 @import "cart";
+@import "modal";
 
 body {
   font-family: 'Nunito', sans-serif;
 }
 
-.content{
+.scroll-lock {
+  overflow: hidden;
+}
+
+.content {
   transition: transform 0.5s;
 }
+
 .content.active {
   transform: translateX(-30%);
 }
