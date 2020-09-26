@@ -18,6 +18,7 @@
     padding-top: 120px;
     width: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   &__button {
@@ -41,37 +42,40 @@
       &:after {
         content: '';
         position: absolute;
-        right: -1px;
+        right: 0;
+        left: -1px;
         height: 2px;
         width: 10px;
         top: -3px;
-        transform: rotate(45deg);
+        transform: rotate(-45deg);
         background: #fff;
-        transition: left 0.5s, transform 0.5s;
+        transition: transform 0.5s, right 0.5s;
       }
 
       &:before {
         content: '';
         position: absolute;
-        right: -1px;
+        left: -1px;
         height: 2px;
         width: 10px;
         bottom: -3px;
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
         background: #fff;
-        transition: left 0.5s, transform 0.5s;
+        transition: transform 0.5s, right 0.5s;
       }
     }
   }
 
   &__button.active span:after {
-    left: -1px;
-    transform: rotate(-45deg);
+    left: auto;
+    right: -1px;
+    transform: rotate(45deg);
   }
 
   &__button.active span:before {
-    left: -1px;
-    transform: rotate(45deg);
+    left: auto;
+    right: -1px;
+    transform: rotate(-45deg);
   }
 }
 

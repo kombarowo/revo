@@ -2,6 +2,7 @@
 @import "vars";
 @import "mixins";
 @import "fonts";
+@import "animate";
 @import "text";
 @import "button";
 @import "menu";
@@ -22,6 +23,7 @@ body {
 
 .content {
   transition: transform 0.5s;
+  overflow: hidden;
 }
 
 .content.active {
@@ -33,6 +35,10 @@ body {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.section{
+  padding-bottom: 7vw;
 }
 
 .section__titles {
