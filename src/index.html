@@ -11,7 +11,7 @@
 <body>
 
 <div class="menu" data-dyRender="768, body, .intro__body ,intro__menu">
-  <button class="button menu__button"><span>toggle menu</span></button>
+  <button class="button menu__button anim" data-anim="fadeInRight,once,0.5"><span>toggle menu</span></button>
   <div class="cart">
     <img src="./assets/img/png/cart.png" alt="cart">
     <div class="cart__count">
@@ -26,7 +26,7 @@
       <a class="text text--link text--color1 text--light" href="build" data-type="anchor">COFFEE</a>
     </li>
     <li class="menu__item anim" data-anim="fadeInRight,once,0.4">
-      <a class="text text--link text--color1 text--light" href="" data-type="anchor">PHIN MẠ MÀU</a>
+      <a class="text text--link text--color1 text--light" href="choose" data-type="anchor">PHIN MẠ MÀU</a>
     </li>
     <li class="menu__item anim" data-anim="fadeInRight,once,0.6">
       <a class="text text--link text--color1 text--light" href="" data-type="anchor">COMBO PHIN PHÊ</a>
@@ -63,31 +63,149 @@
         <div class="section__title text text--extra-bold text--size3">COFFEE BUILD YOUR BASE</div>
       </div>
       <div class="build__row">
-        <div class="build__col anim" data-anim="fadeInUp,once,0.25">
+        <div class="build__col anim" data-anim="fadeInUp,once,0.2">
           <div class="label build__label">
             <div class="label__title"><span class="text text--bold text--size2">Nguồn gốc</span></div>
             <div class="label__text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
           </div>
         </div>
-        <div class="build__col anim" data-anim="fadeInDown,once,0.5">
+        <div class="build__col anim" data-anim="fadeInDown,once,0.4">
           <div class="label build__label">
             <div class="label__title"><span class="text text--bold text--size2">Nguồn gốc</span></div>
             <div class="label__text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
           </div>
         </div>
-        <div class="build__col anim" data-anim="fadeInUp,once,0.75">
+        <div class="build__col anim" data-anim="fadeInUp,once,0.6">
           <div class="label build__label">
             <div class="label__title"><span class="text text--bold text--size2">Nguồn gốc</span></div>
             <div class="label__text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
           </div>
         </div>
-        <div class="build__col anim" data-anim="fadeInDown,once,1">
+        <div class="build__col anim" data-anim="fadeInDown,once,0.8">
           <div class="label build__label">
             <div class="label__title"><span class="text text--bold text--size2">Nguồn gốc</span></div>
             <div class="label__text">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế.</div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="choose" class="section choose-coffee anim" data-anim="fadeIn,once">
+    <div class="section__titles anim" data-anim="fadeInUp,once,0.5">
+      <div class="section__subtitle text text--size1">Choose Your Favorite</div>
+      <div class="section__title text text--extra-bold text--size3">CHUẨN GU ĐÚNG VỊ</div>
+    </div>
+    <div class="container">
+      <div class="choose-slider choose-coffee__slider anim" data-anim="fadeInLeft,once,0.5">
+        <div class="choose-slider__button choose-slider__button--prev"></div>
+        <div class="choose-slider__button choose-slider__button--next"></div>
+        <div class="choose-slider__wrapper">
+          <div class="choose-slider__slide">
+            <div class="product">
+              <div class="product__image">
+                <img src="./assets/img/png/revo-morning.png" alt="revo-morning">
+              </div>
+              <div class="product__info">
+                <div class="product__price text text--color2">99.00</div>
+                <div class="product__name text text--bold text--size1">REVO Morning</div>
+                <div class="product__desc">đắng, hậu ngọt, hương hoa</div>
+                <div class="product__buttons">
+                  <button class="product__button--buy button button--bg1 button--brus button--pp1 text text--color1">MUA
+                    NGAY
+                  </button>
+                  <button class="product__button--detail button">CHI TIẾT</button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img src="./assets/img/png/revo-origin.png" alt="revo-origin">
+              </div>
+              <div class="product__info">
+                <div class="product__price text text--color2">139.00</div>
+                <div class="product__name text text--bold text--size1">REVO Origin</div>
+                <div class="product__desc">hậu ngọt, ít đắng, vị chua dâu</div>
+                <div class="product__buttons">
+                  <button class="product__button--buy button button--bg1 button--brus button--pp1 text text--color1">MUA
+                    NGAY
+                  </button>
+                  <button class="product__button--detail button">CHI TIẾT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="choose-slider__slide">
+            <div class="product">
+              <div class="product__image">
+                <img src="./assets/img/png/revo-every.png" alt="revo-everyday">
+              </div>
+              <div class="product__info">
+                <div class="product__price text text--color2">85.00</div>
+                <div class="product__name text text--bold text--size1">REVO Everyday</div>
+                <div class="product__desc">cân bằng, hậu đắng, vị chocolate</div>
+                <div class="product__buttons">
+                  <button class="product__button--buy button button--bg1 button--brus button--pp1 text text--color1">MUA
+                    NGAY
+                  </button>
+                  <button class="product__button--detail button">CHI TIẾT</button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img src="./assets/img/png/revo-damda.png" alt="revo-damda">
+              </div>
+              <div class="product__info">
+                <div class="product__price text text--color2">75.00</div>
+                <div class="product__name text text--bold text--size1">REVO Đậm Đà</div>
+                <div class="product__desc">đậm đà, đắng, truyền thống</div>
+                <div class="product__buttons">
+                  <button class="product__button--buy button button--bg1 button--brus button--pp1 text text--color1">MUA
+                    NGAY
+                  </button>
+                  <button class="product__button--detail button">CHI TIẾT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="choose-slider__slide">
+            <div class="product">
+              <div class="product__image">
+                <img src="./assets/img/png/revo-morning.png" alt="revo-morning">
+              </div>
+              <div class="product__info">
+                <div class="product__price text text--color2">99.00</div>
+                <div class="product__name text text--bold text--size1">REVO Morning</div>
+                <div class="product__desc">đắng, hậu ngọt, hương hoa</div>
+                <div class="product__buttons">
+                  <button class="product__button--buy button button--bg1 button--brus button--pp1 text text--color1">MUA
+                    NGAY
+                  </button>
+                  <button class="product__button--detail button">CHI TIẾT</button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__image">
+                <img src="./assets/img/png/revo-morning.png" alt="revo-morning">
+              </div>
+              <div class="product__info">
+                <div class="product__price text text--color2">99.00</div>
+                <div class="product__name text text--bold text--size1">REVO Morning</div>
+                <div class="product__desc">đắng, hậu ngọt, hương hoa</div>
+                <div class="product__buttons">
+                  <button class="product__button--buy button button--bg1 button--brus button--pp1 text text--color1">MUA
+                    NGAY
+                  </button>
+                  <button class="product__button--detail button">CHI TIẾT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 </main>
@@ -100,8 +218,6 @@
     <div class="modal__close">&times;</div>
   </div>
 </div>
-
-<!--<script src="https://www.youtube.com/iframe_api"></script>-->
 </body>
 
 </html>

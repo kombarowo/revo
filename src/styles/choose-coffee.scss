@@ -1,0 +1,24 @@
+.choose-coffee {
+
+}
+
+@media (min-width: 1024px) {
+  .choose-coffee {
+    position: relative;
+
+    &:before {
+      content: '';
+      background: $primColor;
+      width: 30%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &__slider {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

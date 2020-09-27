@@ -51,6 +51,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "normalize.css": "^8.0.1",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^6.3.1"
   }
 }

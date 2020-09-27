@@ -22,6 +22,10 @@
     color: #ffffff;
   }
 
+  &--color2 {
+    color: $accColor;
+  }
+
   &--size1 {
     font-size: 20px;
   }
@@ -46,5 +50,22 @@
   }
   .text--link:hover {
     background-size: 100% 1px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text {
+
+    &--size1 {
+      font-size: 18px;
+    }
+
+    &--size2 {
+      font-size: 22px;
+    }
+
+    &--size3 {
+      font-size: 28px;
+    }
   }
 }

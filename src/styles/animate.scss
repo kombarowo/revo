@@ -1,33 +1,33 @@
-.anim {
+.anim{
   visibility: hidden;
   opacity: 0;
 }
 
-.anim.fadeIn {
+.fadeIn {
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-.anim.fadeInLeft {
+.fadeInLeft {
   animation-name: fadeInLeft;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-.anim.fadeInRight {
+.fadeInRight {
   animation-name: fadeInRight;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-.anim.fadeInUp{
+.fadeInUp{
   animation-name: fadeInUp;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
-.anim.fadeInDown{
+.fadeInDown{
   animation-name: fadeInDown;
   animation-duration: 1s;
   animation-fill-mode: forwards;
