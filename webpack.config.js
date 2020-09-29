@@ -86,10 +86,11 @@ module.exports = {
       ]
     }),
     new ImageminPlugin({
-      pngquant: ({quality: 50}),
-      plugins: [
-        imageminMozjpeg({quality: 50})
-      ]
-    })
+        pngquant: ({quality: 50}),
+        plugins: [
+          imageminMozjpeg({quality: 100})
+        ]
+      }
+    )
   ]
 }

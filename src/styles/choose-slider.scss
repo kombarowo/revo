@@ -1,0 +1,59 @@
+.choose-slider {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__slide {
+    flex-shrink: 0;
+    opacity: 0.5;
+    min-height: 470px;
+
+    &--active, &--next {
+      opacity: 1;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &--prev {
+      left: 0;
+      transform: rotate(180deg) translateY(50%);
+      background-image: url('../assets/img/png/arrow-right.png');
+      background-position: 50% 50%;
+    }
+
+    &--next {
+      right: 0;
+      background-image: url('../assets/img/png/arrow-right.png');
+      background-position: 50% 50%;
+    }
+
+    &--disabled {
+      display: none;
+    }
+  }
+
+  &__slide .product:not(:last-child) {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 767px) {
+  .choose-slider {
+    &__slide {
+      min-height: 400px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.build {
+  &__row {
+    display: flex;
+  }
+
+  &__col {
+    box-sizing: border-box;
+    //flex: 0 0 25%;
+    padding: 0 3vw;
+
+    &:nth-child(1) {
+      background-image: url('../assets/img/png/label-1.png');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+
+    &:nth-child(2) {
+      background-image: url('../assets/img/png/label-2.png');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+
+    &:nth-child(3) {
+      background-image: url('../assets/img/png/label-3.png');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+
+    &:nth-child(4) {
+      background-image: url('../assets/img/png/label-4.png');
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .build {
+    &__row {
+      flex-wrap: wrap;
+    }
+
+    &__col {
+      flex: 0 0 50%;
+      margin-bottom: 5vw;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .build {
+    &__col {
+      flex: 0 0 100%;
+      margin-bottom: 10vw;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.scroll-lock {
+  overflow: hidden;
+}
+
+.content {
+  transition: transform 0.5s;
+  overflow: hidden;
+}
+
+.content.active {
+  transform: translateX(-30%);
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-bottom: 7vw;
+}
+
+.section__titles {
+  text-align: center;
+  padding: 5vw 0;
+}

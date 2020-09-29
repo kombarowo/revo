@@ -1,0 +1,43 @@
+.button {
+  &:focus,
+  &:active {
+    outline: none;
+    border: none;
+  }
+
+  background: none;
+  border: none;
+
+  &--play {
+    background: #fff;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 0;
+    background-image: url('../assets/img/png/play.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--disabled {
+    opacity: 0.3;
+  }
+
+  &--bg1 {
+    background: $accColor;
+  }
+
+  &--brus {
+    border-radius: 1em;
+  }
+
+  &--pp1 {
+    padding: 7px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button {
+    cursor: pointer;
+  }
+}

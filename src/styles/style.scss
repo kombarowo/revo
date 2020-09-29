@@ -1,3 +1,33 @@
 @import '~normalize.css';
+@import "vars";
 @import "mixins";
 @import "fonts";
+@import "animate";
+@import "main";
+@import "text";
+@import "button";
+@import "menu";
+@import "intro";
+@import "cart";
+@import "modal";
+@import "labels";
+@import "build";
+@import "choose-slider";
+@import "choose-coffee";
+@import "product";
+@import "giftset";
+@import "combo";
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: $primColor;
+  background: #fafafa;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: $lightColor;
+}

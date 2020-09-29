@@ -1,0 +1,93 @@
+.product {
+  box-sizing: border-box;
+  background: #ffffff;
+
+  &__price, &__name {
+    margin-bottom: 1em;
+  }
+
+  &__desc {
+    flex-grow: 1;
+    margin-bottom: 1em;
+  }
+
+  &__image img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    white-space: nowrap;
+  }
+}
+
+.choose-coffee .product {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: flex-start;
+  min-height: calc((100% - 75px) / 2);
+  overflow: hidden;
+  border-radius: 10px;
+
+  &__image {
+    flex: 0 0 235px;
+    background: $lightColor;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info {
+    min-height: 100%;
+    flex-grow: 1;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1124px) {
+  .choose-coffee .product {
+
+    &__image {
+      flex: 0 0 30%;
+    }
+
+    &__info {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 449px) {
+  .choose-coffee .product {
+    flex-direction: column;
+
+    &__image img {
+      max-width: 40%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .choose-coffee .product {
+    &__image img {
+      max-width: 80%;
+    }
+
+    &__info {
+      padding: 20px;
+    }
+  }
+}
