@@ -5,12 +5,13 @@ import './polyfills/foreach';
 import smoothscroll from 'smoothscroll-polyfill';
 import Menu from "./modules/menu";
 import VideoModal from "./modules/videoModal";
-import Swiper, {Navigation} from 'swiper';
+import Swiper, {Navigation, Pagination} from 'swiper';
+import Tabs from "./modules/tabs";
 import animOnScroll from "./modules/animOnScroll";
 import initAnchors from "./modules/anchors";
 import dynamicRender from "./modules/dynamicRender";
 
-Swiper.use([Navigation]);
+Swiper.use([Navigation, Pagination]);
 
 window.addEventListener('DOMContentLoaded', function () {
   const isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
@@ -41,7 +42,7 @@ window.addEventListener('DOMContentLoaded', function () {
     navigation: {
       nextEl: '.choose-slider__button--next',
       prevEl: '.choose-slider__button--prev',
-      disabledClass: 'choose-slider__button--disabled',
+      disabledClass: 'button--disabled',
     },
     breakpoints: {
       768: {
@@ -49,6 +50,34 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     }
   })
+
+  const comboSlider = new Swiper('.combo__slider', {
+    wrapperClass: 'combo__slider-wrapper',
+    slideClass: 'combo__slide',
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    slideActiveClass: 'combo__slide--active',
+    slideNextClass: 'combo__slide--next',
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.combo__button--next',
+      prevEl: '.combo__button--prev',
+      disabledClass: 'button--disabled'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    }
+  })
+
+  new Tabs({
+    trigger: '.giftset__bullet',
+    content: '.giftset__tab'
+  });
 
   setTimeout(() => {
     animOnScroll();

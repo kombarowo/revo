@@ -19,6 +19,10 @@
     background-position: 50% 50%;
   }
 
+  &--disabled {
+    opacity: 0.3;
+  }
+
   &--bg1 {
     background: $accColor;
   }
